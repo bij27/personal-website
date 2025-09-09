@@ -1,0 +1,28 @@
+body {
+  display: grid;
+}
+
+nav {
+  display: grid;
+}
+
+nav ul {
+  display: flex;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: flex-end;
+  gap: 100px;
+  list-style: none;
+  font-size: 20px;
+  background-color: rgb(108, 130, 167);
+  margin: 0px 0px 0px 0px;
+  
+}
+
+h1 {
+  display:grid ;
+  grid-row-start: 1;
+  grid grid-row-end: 2; 
+  margin: 0px 0px 0px 0px;
+  font-size: 30px;
+  letter-spacing: 5px;
+}
