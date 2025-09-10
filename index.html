@@ -3,19 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles.css" />
     <title>Bijan</title>
   </head>
   <body>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="./about.html">About</a></li>
-        <li><a href="./contact.html">Contact</a></li>
-      </ul>
-    </nav>
-    <h1>Home Page</h1>
-    <p></p>
+    <header>
+      <h1>Bijan Jadhavji</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./portfolio.html">Portfolio</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="intro">
+        <div class="intro-content">
+          <div class="intro-text">
+            <p>"Ad astra per aspera"</p>
+            <p>"To the stars through hardships"</p>
+          </div>
+          <img src="/images/bijcher.jpg" alt="Me and my dog Cher" />
+        </div>
+      </section>
+    </main>
+
+    <!-- <section class="features">
+        <h2>Features</h2>
+        <div class="feature-cards">
+          <div class="card">Feature 1</div>
+          <div class="card">Feature 2</div>
+          <div class="card">Feature 3</div>
+        </div>
+      </section> ----- use on feature/portfolio branch-->
+
+    <footer>
+      <p>&copy; 2025 Bijan. All rights reserved.</p>
+    </footer>
+
+    <script>
+      window.addEventListener("scroll", function () {
+        const header = document.querySelector("header");
+        header.classList.toggle("scrolled", window.scrollY > 50);
+      });
+    </script>
   </body>
-  
 </html>
