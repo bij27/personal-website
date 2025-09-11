@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Bijan</title>
+  </head>
+  <body>
+    <header>
+      <h1>Bijan Jadhavji</h1>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="portfolio">
+        <div class="portfolio-content">
+          <div class="portfolio-blurb">
+            <p>
+              Here are some projects that I worked on that I'm incredibly proud
+              of.
+            </p>
+            <p>
+              I hope you enjoy watching them as much as I enjoyed making them!
+            </p>
+          </div>
+          <div class="portfolio-cards">
+            <div class="card">
+              <h3>Hear No Evil (2022)</h3>
+              <h3>Written & Directed by Bijan Jadhavji</h3>
+              <h3>Other roles: Director of Photography, Editor</h3>
+    
+              <div class="video-container">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/1B7CzhJOHSo?si=h79iWTBRwtXLznSl"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <p>
+                This slasher horror takes place on a college campus and comes
+                complete with a mysterious lurker and a scream queen.
+              </p>
+
+              <p>
+                Won "Best Short Film" and "Best Overall Film" in 2022 at the
+                Moorpark Film Festival in Los Angeles.
+              </p>
+            </div>
+            <div class="card">
+              <h3>Buddy (2022)</h3>
+              <h3>Written & Co-Directed by Bijan Jadhavji</h3>
+              <h3>Other roles: Director of Photography, Editor</h3>
+              <div>
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/yIWa1K6_qIc?si=KvcZqSBl9Yzs_ozZ"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <p>
+                This is a fun, quirky take on a sitcom with a bit of a horror
+                twist! A lot of fun to make.
+              </p>
+              <p>
+                This film earned us "Best Use of Genre" in the 2022 48 Hour Film
+                Festival in Los Angeles - a small but impressive feat for a
+                low-budget crew.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2025 Bijan. All rights reserved.</p>
+    </footer>
+
+    <script>
+      window.addEventListener("scroll", function () {
+        const header = document.querySelector("header");
+        header.classList.toggle("scrolled", window.scrollY > 50);
+      });
+    </script>
+  </body>
+</html>
