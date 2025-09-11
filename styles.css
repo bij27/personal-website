@@ -124,12 +124,12 @@ h1 {
   color: white;
 }
 
-.intro-image {
+/* .intro-image {
   position: fixed;
   top: 50%;
   transform: translateY(-50%);
   flex-shrink: 0;
-}
+} */
 
 .intro-image img {
   max-width: 400px;
@@ -174,14 +174,20 @@ h1 {
   }
 }
 
-.about-page .intro-image {
+/* .about-page .intro-image {
   position: fixed;
   top: 50%;                  
   right: 350px;               
   transform: translateY(-50%);
   width: 400px;                        
-}
+} */
 
+.about-page .intro-image {
+    position: sticky;
+    top: 100px; 
+    flex-shrink: 0;
+    width: 400px;
+}
 
 .about-page .intro-text {
   animation: fadeInUp 0.8s ease forwards;
