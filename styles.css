@@ -250,11 +250,9 @@ footer {
   flex-wrap: wrap;
 }
 
-/* Left blurb stays sticky when scrolling */
 .contact-blurb {
   position: sticky;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 100px;
   flex: 0 0 300px;
   font-family: "Poiret One", sans-serif;
   font-size: 22px;
@@ -262,7 +260,6 @@ footer {
   color: white;
 }
 
-/* Form styling */
 .contact-form {
   flex: 1;
   display: flex;
@@ -274,8 +271,17 @@ footer {
   box-shadow: 0 4px 15px rgba(0,0,0,0.6);
 }
 
+.contact-content {
+  display: flex;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 50px auto;          
+  position: relative;
+  align-items: flex-start;   
+}
+
 .contact-form label {
-  color: #ffee00;
+  color: #eff0f5;
   font-family: "Poiret One", sans-serif;
   font-size: 18px;
   margin-bottom: 5px;
@@ -295,11 +301,11 @@ footer {
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-  outline: 2px solid #ffee00;
+  outline: 2px solid #c9c9c1;
 }
 
 .contact-form button {
-  background-color: #ffee00;
+  background-color: #d7d7d2;
   color: #000;
   font-weight: bold;
   font-family: "Poiret One", sans-serif;
@@ -311,6 +317,6 @@ footer {
 }
 
 .contact-form button:hover {
-  background-color: #ffcc00;
+  background-color: #e4cc6b;
   transform: scale(1.05);
 }
