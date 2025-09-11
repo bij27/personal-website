@@ -1,11 +1,19 @@
 body {
+  display: flex;
+  flex-direction: column;
   margin: 0;
+  padding: 0;
   line-height: 1.4;
   font-family: "Poiret One", sans-serif;
   font-weight: 100;
   font-style: normal;
   color: azure;
   background-color: #000000;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
 }
 
 header {
@@ -32,8 +40,8 @@ nav ul {
   gap: 20px;
   list-style: none;
   margin: 0;
-  padding-right: 30px;
-  font-size: 25px;
+  padding-right: 140px;
+  font-size: 18px;
   letter-spacing: 2px;
   font-weight: 100;
   font-style: normal;
@@ -45,12 +53,30 @@ nav a {
   font-weight: bold;
 }
 
+nav ul li a {
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: background 0.3s ease, color 0.3s ease;
+  display: inline-block;
+  transition: transform 0.2s ease, color 0.2s ease;
+  
+}
+
+nav ul li a:hover {
+  background: rgb(213, 215, 215);
+  color: rgb(250, 247, 247);
+  transform: scale(1.1);
+  color: rgb(245, 255, 255);
+}
+
+
 main {
-  padding: 50px 20px;
+  padding: 50px 0px;
+  flex: 1;
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 30px;
   color: white;git 
   letter-spacing: 2px;
   font-weight: 100;
@@ -60,10 +86,16 @@ h1 {
 .intro-content {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   gap: 40px;
   flex-wrap: wrap;
   margin-top: 20px;
+  align-items: flex-start;
+  position:relative;
+  padding-right: 150px;
+  padding-left: 150px;
+  margin-left: 0px;
+ 
 }
 
 .intro-content img {
@@ -76,18 +108,105 @@ h1 {
 
 .intro-content img:hover {
   transform: scale (1.05);
-  box-shadow: 0 6px 40px #e3f572;
+  box-shadow: 0 6px 40px #ffee00;
 }
 
 .intro-content p {
-  font-size: 40px;
+  font-size: 60px;
   font-family: "Bodoni Moda SC", serif;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap:wrap;
   font-style: italic;
-  padding-right: 30px;
+  padding: 10px;
+  color: white;
+  text-shadow: 0 0 10px #ffee00;
   color: white;
 }
+
+.intro-image {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  flex-shrink: 0;
+}
+
+.intro-image img {
+  max-width: 400px;
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px white;
+}
+
+
+.about-page .intro-text p {
+  font-size: 25px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: rgb(237, 240, 240);
+  font-family: "Poiret One", sans-serif;
+}
+
+.intro-text {
+  flex: 1;
+  max-width: 600px;
+}
+
+.about-page .intro-content {
+  display: flex;
+  gap: 40px;
+  position: relative;
+}
+
+.about-page .intro-text {
+  flex: 1;
+  max-width: 600px;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px); 
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);   
+  }
+}
+
+.about-page .intro-image {
+  position: fixed;
+  top: 50%;                  
+  right: 350px;               
+  transform: translateY(-50%);
+  width: 400px;              
+  z-index: 10;              
+}
+
+
+.about-page .intro-text {
+  animation: fadeInUp 0.8s ease forwards;
+  animation-delay: 0.2s; 
+  opacity: 0;
+}
+
+.about-page .intro-content img {
+  animation: fadeInUp 0.8s ease forwards;
+  animation-delay: 0.7s; 
+  opacity: 0;
+}
+
+.intro-text {
+  animation: fadeInUp 0.8s ease forwards;
+  animation-delay: 0.7s; 
+  opacity: 0;
+}
+
+.intro-content img {
+  animation: fadeInUp 0.8s ease forwards;
+  animation-delay: 0.2s; 
+  opacity: 0;
+}
+
 
 /* .feature-cards {
   display: flex;
@@ -114,7 +233,8 @@ h1 {
 footer {
   background-color: #1b1a1dc1;
   text-align: center;
-  padding: 10px;
+  padding: 0px;
+  margin: 0;
   box-shadow: 0 2px 5px rgb(255, 255, 255);
 }
 
